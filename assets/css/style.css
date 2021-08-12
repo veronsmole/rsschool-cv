@@ -118,7 +118,7 @@ a:hover {
     color: #CBC0E4;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1020px) {
     .main-container {
         flex-direction: column;
     }

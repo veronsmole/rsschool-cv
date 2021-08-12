@@ -7,6 +7,8 @@ body {
 main {
     color: #575454;
     font-size: larger;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .main-container {

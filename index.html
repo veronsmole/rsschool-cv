@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veronika Smolenok | rsschool-cv</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main>
+    <header class="header">
+        <img id="header__me-photo" src="assets/img/me.png" alt="Photo">
+        <div>
+            <h1 id="veronika-smolenok">Veronika Smolenok</h1>
+            <h2>Front End Developer (Beginner)</h2>
+        </div>
+    </header>
+    <div class="main-container">
+        <section class="main-container__left-block">
+            <div class="section-container">
+                <h3>Contacts</h3>
+                <ul class="section-container__list-with-icons">
+                    <li>
+                        <img src="assets/img/location.png" alt="Location icon">
+                        <span class="bold">Location:</span>Minsk, Belarus
+                    </li>
+                    <li>
+                        <img src="assets/img/phone.png" alt="Phone icon">
+                        <span class="bold">Phone:</span>+375 25 7500566
+                    </li>
+                    <li>
+                        <img src="assets/img/email.png" alt="Email icon">
+                        <span class="bold">Email:</span>veronsmole@gmail.com
+                    </li>
+                    <li>
+                        <img src="assets/img/GitHub.png" alt="GitHub icon">
+                        <span class="bold">GitHub:</span>
+                        <a href="https://github.com/veronsmole">veronsmole</a>
+                    </li>
+                    <li>
+                        <img src="assets/img/Linkedin.png" alt="LinkedIn icon">
+                        <span class="bold">Linkedin: </span>
+                        <a href="https://www.linkedin.com/in/veronika-smolenok-402889203/">Veronika Smolenok</a>
+                </ul>
+            </div>
+            <div class="section-container">
+                <h3>About Me</h3>
+                Experienced Research&Development lead with a demonstrated history of working in the Arts and Crafts
+                industry.
+            </div>
+            <div class="section-container">
+                <h3>English</h3>
+                <p>B2 (I had been practicing English when I worked in Dubai an China, then at Arteza Company here in
+                    Minsk) </p>
+            </div>
+            <div class="section-container">
+                <h3>Education</h3>
+                <p><span>University:</span>Belarusian-Russian University, Economics</p>
+            </div>
+            <div class="section-container">
+                <h3>Courses:</h3>
+                <ul class="courses__list">
+                    <li>LeverX, Intro to IT</li>
+                    <li>Head First: HTML and CSS</li>
+                    <li>Head First: JavaScript Programming</li>
+                </ul>
+            </div>
+            <div class="section-container">
+                <h3>Work Experience</h3>
+                <p>R&D and BI Lead (Drawing Division)<br>
+                    ARTEZA Company (Binatomic)<br>
+                    Aug 2020 – March 2021</p>
+            </div>
+        </section>
+        <section class="main-container__right-block">
+            <div class="section-container">
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (Basic)</li>
+                    <li>Git</li>
+                    <li>Jira</li>
+                    <li>Google Suite</li>
+                    <li>Asana</li>
+                </ul>
+            </div>
+            <div class="section-container">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Adaptability</li>
+                    <li>Decision-making</li>
+                    <li>Multi-tasking</li>
+                    <li>Team playing</li>
+                    <li>Problem- solving</li>
+                    <li>Strategic thinking</li>
+                </ul>
+            </div>
+            <div class="section-container section-container_code-example">
+                <h3>Code Example</h3>
+                <pre>
+                    <code>
+    function highAndLow(numbers) {
+        let numArr = numbers.split(&quot; &quot;)
+        let lowNum = numArr[0];
+        let highNum = numArr[0];
+           for (let i = 0; i&lt; numArr.length; i++) {
+               if (+numArr[i]&gt;highNum) {
+                  highNum = numArr[i]
+               }
+               if (+numArr[i]&lt; lowNum) {
+                  lowNum = numArr[i]
+               }
+        }
+        let resultArr = [highNum, lowNum];
+        let resultStr=resultArr.join(&quot; &quot;);
+        return resultStr;
+    }
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <a href="https://gist.github.com/veronsmole">
+            <img class="footer__image" src="assets/img/GitHub.png" alt="GitHub icon">
+        </a>
+        <time class="time" datetime="2021">2021</time>
+        <a href="https://rs.school/js/#basic-knowledge">
+            <img alt="RS logo" class="footer__image" src="assets/img/rs_school_js.svg">
+        </a>
+    </footer>
+</main>
+</body>
+</html>

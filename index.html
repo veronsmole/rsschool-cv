@@ -7,36 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Veronika Smolenok | rsschool-cv</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Подключение  highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <!-- Подключение  скрипта для адаптивного бургер-меню -->
+    <script src="assets/js/js.js"></script>
+
 </head>
 <body>
-<main>
-    <header class="header">
-        <img id="header__me-photo" src="assets/img/me.png" alt="Photo">
-        <div>
-            <h1 id="veronika-smolenok">Veronika Smolenok</h1>
-            <h2>Front End Developer (Beginner)</h2>
+<div class="navigation_menu">
+    <div class="container">
+        <div class="burger_menu" id="burger_menu">
+            <span></span>
         </div>
-    </header>
+        <nav class="menu" id="menu">
+            <ul class="menu_list" id="menu_list">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#code">Code Example</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<header class="header">
+    <img id="header__me-photo" src="assets/img/me.png" alt="Photo">
+    <div>
+        <h1 id="veronika-smolenok">Veronika Smolenok</h1>
+        <h2>Front End Developer (Beginner)</h2>
+    </div>
+</header>
+<main>
     <div class="main-container">
         <section class="main-container__left-block">
-            <div class="section-container">
+            <div class="section-container" id="contacts">
                 <h3>Contacts</h3>
                 <ul class="section-container__list-with-icons">
                     <li>
                         <img src="assets/img/location.png" alt="Location icon">
-                        <span class="bold">Location:</span>Minsk, Belarus
+                        <span class="bold">Location: </span>Minsk, Belarus
                     </li>
                     <li>
                         <img src="assets/img/phone.png" alt="Phone icon">
-                        <span class="bold">Phone:</span>+375 25 7500566
+                        <span class="bold">Phone: </span>+375 25 7500566
                     </li>
                     <li>
                         <img src="assets/img/email.png" alt="Email icon">
-                        <span class="bold">Email:</span>veronsmole@gmail.com
+                        <span class="bold">Email: </span>veronsmole@gmail.com
                     </li>
                     <li>
                         <img src="assets/img/GitHub.png" alt="GitHub icon">
-                        <span class="bold">GitHub:</span>
+                        <span class="bold">GitHub: </span>
                         <a href="https://github.com/veronsmole">veronsmole</a>
                     </li>
                     <li>
@@ -47,7 +71,7 @@
             </div>
             <div class="section-container">
                 <h3>About Me</h3>
-                Experienced Research&Development lead with a demonstrated history of working in the Arts and Crafts
+                Experienced Research & Development lead with a demonstrated history of working in the Arts and Crafts
                 industry.
             </div>
             <div class="section-container">
@@ -55,11 +79,11 @@
                 <p>B2 (I had been practicing English when I worked in Dubai an China, then at Arteza Company here in
                     Minsk) </p>
             </div>
-            <div class="section-container">
+            <div class="section-container" id="education">
                 <h3>Education</h3>
                 <p><span>University:</span>Belarusian-Russian University, Economics</p>
             </div>
-            <div class="section-container">
+            <div class="section-container" id="courses">
                 <h3>Courses:</h3>
                 <ul class="courses__list">
                     <li>LeverX, Intro to IT</li>
@@ -67,7 +91,7 @@
                     <li>Head First: JavaScript Programming</li>
                 </ul>
             </div>
-            <div class="section-container">
+            <div class="section-container" id="experience">
                 <h3>Work Experience</h3>
                 <p>R&D and BI Lead (Drawing Division)<br>
                     ARTEZA Company (Binatomic)<br>
@@ -75,7 +99,7 @@
             </div>
         </section>
         <section class="main-container__right-block">
-            <div class="section-container">
+            <div class="section-container" id="skills">
                 <h3>Hard Skills</h3>
                 <ul>
                     <li>HTML</li>
@@ -98,16 +122,16 @@
                     <li>Strategic thinking</li>
                 </ul>
             </div>
-            <div class="section-container section-container_code-example">
+            <div class="section-container section-container_code-example" id="code">
                 <h3>Code Example</h3>
                 <pre>
-                    <code>
+                    <code class="language-js">
     function highAndLow(numbers) {
         let numArr = numbers.split(&quot; &quot;)
         let lowNum = numArr[0];
         let highNum = numArr[0];
            for (let i = 0; i&lt; numArr.length; i++) {
-               if (+numArr[i]&gt;highNum) {
+               if (+numArr[i]&gt; highNum) {
                   highNum = numArr[i]
                }
                if (+numArr[i]&lt; lowNum) {
@@ -123,15 +147,15 @@
             </div>
         </section>
     </div>
-    <footer>
-        <a href="https://gist.github.com/veronsmole">
-            <img class="footer__image" src="assets/img/GitHub.png" alt="GitHub icon">
-        </a>
-        <time class="time" datetime="2021">2021</time>
-        <a href="https://rs.school/js/#basic-knowledge">
-            <img alt="RS logo" class="footer__image" src="assets/img/rs_school_js.svg">
-        </a>
-    </footer>
 </main>
+<footer>
+    <a href="https://gist.github.com/veronsmole">
+        <img class="footer__image" src="assets/img/GitHub.png" alt="GitHub icon">
+    </a>
+    <time class="time" datetime="2021">2021</time>
+    <a href="https://rs.school/js/#basic-knowledge">
+        <img alt="RS logo" class="footer__image" src="assets/img/rs_school_js.svg">
+    </a>
+</footer>
 </body>
 </html>
